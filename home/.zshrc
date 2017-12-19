@@ -58,6 +58,7 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 ### 命令自動変換（エイリアス）
 alias ls="ls -F --color=auto" #lsでディレクトリを区別する。あと色をつける。
 alias less="less -R" #色付きの文字をきちんと扱う
+alias rm='rm -i' #漢字ちゃんの悲劇をもう繰り返さない為に
 alias g="git"
 
 #consolemd
