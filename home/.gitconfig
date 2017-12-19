@@ -12,4 +12,5 @@
 	r = reset
 	b = branch
 	l = log
-
+[include]
+    path = .gitconfig.local
