@@ -79,6 +79,8 @@ set shiftwidth=4
 set tabstop=4
 "ステータスラインに表示する情報
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+" TeXの形式をデフォルトでLaTeXと認識する
+let g:tex_flavor='latex'
 
 "挿入モード時、ステータスラインの色を変更する。
 "https://sites.google.com/site/fudist/Home/vim-nihongo-ban/vim-color
