@@ -26,8 +26,8 @@ if dein#load_state(s:dein_dir)
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('nanotech/jellybeans.vim')
-  call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
-  call dein#add('justmao945/vim-clang')
+  call dein#add('lervag/vimtex')
+  call dein#add('thinca/vim-quickrun')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
@@ -81,6 +81,13 @@ set tabstop=4
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 " TeXの形式をデフォルトでLaTeXと認識する
 let g:tex_flavor='latex'
+" Leaderキーをスペースにする
+let mapleader = "\<Space>"
+" vim-quickrun の初期設定
+let g:quickrun_config = {}
+" vim-tex の設定
+let g:vimtex_view_general_viewer = 'open'
+let g:vimtex_compiler_latexmk = {'callback' : 0}
 
 "挿入モード時、ステータスラインの色を変更する。
 "https://sites.google.com/site/fudist/Home/vim-nihongo-ban/vim-color
